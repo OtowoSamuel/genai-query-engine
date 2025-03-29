@@ -4,7 +4,7 @@
 
 ```bash
 # 1. Clone repo
-git clone https://github.com/your-username/genai-query-engine.git
+git clone https://github.com/OtowoSamuel/genai-query-engine.git
 cd genai-query-engine
 
 # 2. Install dependencies
