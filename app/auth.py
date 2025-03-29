@@ -4,7 +4,7 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 
-SECRET_KEY = os.getenv("mock-secret-key")  
+SECRET_KEY = os.getenv("SECRET_KEY") or "fallback-dev-key-only"  
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
