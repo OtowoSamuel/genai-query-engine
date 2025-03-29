@@ -1,4 +1,4 @@
-import os  # <-- Add this import at the top
+import os  
 from fastapi import FastAPI
 from app.routes import router
 
@@ -7,10 +7,10 @@ app.include_router(router)
 
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.getenv("PORT", 8000))  # <-- Critical Railway compatibility
+    port = int(os.getenv("PORT", 8000))  
     uvicorn.run(
         app,
-        host="0.0.0.0",  # Required for Docker/Railway
-        port=port,        # Now handles both local and production
-        reload=True if os.getenv("DEV") == "1" else False  # Optional: Auto-reload in dev
+        host="0.0.0.0",  
+        port=port,        
+        reload=True if os.getenv("DEV") == "1" else False  
     )
