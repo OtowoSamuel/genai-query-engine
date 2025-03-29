@@ -93,7 +93,7 @@ curl -X POST https://genai-query-engine-production.up.railway.app/validate \
 **Download Collection**  
 Import into Postman for one-click testing
 
-**File:** `GenAI_Query_Engine.postman_collection.json`
+**File:** `GenAI Query Engine.postman_collection.json`
 
 ```json
 {
